@@ -1,0 +1,37 @@
+<!--        -->
+<!--  Tipo de Documento  -->
+<!DOCTYPE html>
+<!--  definir linguagem      -->
+<html lang="pt-br">
+<!--  Cabeça      -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 12</title>
+</head>
+<!--   Corpo     -->
+<body>
+
+    <!--  caixa de texto    -->
+    <input type="text" id="valor">
+    <!--  Botão com evento de clicar chama função pagar( )      -->
+    <button onclick="pagar()"> pagar </button>
+    <script>
+        //função pagar
+        function pagar() {
+            //variável
+            var valor 
+            //a variável valor recebe o valor da caixa de texto pelo id
+            //valor - variável
+            //= atribuição
+            //document - página html
+            //getElementById() - pega o elemento pelo id
+            //value - o valor
+            valor = document.getElementById("valor").value
+            //caixa de alerta
+            alert(valor*(10/100))
+        }
+    </script>
+</body>
+</html>
