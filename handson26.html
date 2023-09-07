@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>handson 26</title>
+</head>
+
+<body>
+    <h1>Handson 26</h1>
+    <p>Sistema Lan House JS</p>
+    <!--Lan House JS
+        Criar uma caixinha de texto (type=number) e nela o usuário vai digitar o valor por 15 min de uso
+        em Reais (R$).
+        Depois crie outra caixinha para digitar o tempo de uso do cliente (min)
+        Ao clicar no botão mostrar o valor total a pagar-->
+    <!--Passo 1-->
+
+    Digite o valor por minuto <input type="number" id="valor">
+
+    Digite o tempo de uso em minutos <input type="number" id="tempo">
+    <button onclick="calcularValor()">Valor total a pagar</button>
+    <br><br>
+    <h3>Total a pagar</h3>
+    <h3 style="font-size: xxx-large;" id="Pagamento"></h3>
+
+
+
+
+
+    <script>
+        function calcularValor() {
+            var valor = parseFloat(document.getElementById("valor").value)
+            var tempo = parseFloat(document.getElementById("tempo").value)
+            /*processamento*/
+            let valorAtual = valor * tempo
+            /*saida*/
+            //alert(valorAtual)
+            document.getElementById("Pagamento").textContent="R$" + valorAtual
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
